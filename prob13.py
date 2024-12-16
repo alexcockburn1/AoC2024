@@ -1,8 +1,6 @@
 import re
 
-
-def intify_list(string_list):
-    return [int(char) for char in string_list]
+from util import intify_list
 
 
 def is_probably_int(num):
