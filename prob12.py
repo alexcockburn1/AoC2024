@@ -1,18 +1,12 @@
 import itertools
 from collections import Counter
 
-from util import is_position_outside_map
+from util import is_position_outside_map, get_neighbour_positions
 
 
 def get_input(filename):
     with open(filename, "r") as f:
         return [list(line.strip()) for line in f.readlines()]
-
-
-def get_neighbour_positions(position):
-    neighbour_directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-    for direction in neighbour_directions:
-        yield position[0] + direction[0], position[1] + direction[1]
 
 
 def flood_fill(base_point, puzzle_input, num_rows, num_cols):
