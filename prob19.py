@@ -11,7 +11,6 @@ def get_input(filename):
 
 @functools.cache
 def is_possible(design):
-    # print(f"{design=}")
     if design == "":
         return True
     for pattern in patterns:

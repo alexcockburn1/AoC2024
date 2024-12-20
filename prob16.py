@@ -1,15 +1,4 @@
-from util import add_vector
-
-
-def get_input(filename):
-    with open(filename, "r") as f:
-        maze = []
-        for i, line in enumerate(f.readlines()):
-            maze.append(line.strip())
-            for j in range(len(line)):
-                if line[j] == "S":
-                    starting_position = (i, j)
-        return maze, starting_position
+from util import add_vector, get_map_starting_position
 
 
 def visualise_maze(maze):
@@ -114,7 +103,7 @@ def part1(maze, starting_position):
 
 
 def main():
-    maze, starting_position = get_input("test_files/prob16_full_input.txt")
+    maze, starting_position = get_map_starting_position("test_files/prob16_full_input.txt")
     part1(maze, starting_position)
 
 
