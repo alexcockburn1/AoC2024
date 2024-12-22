@@ -16,6 +16,10 @@ def add_vector(x, y):
     return x[0] + y[0], x[1] + y[1]
 
 
+def sub_vector(x, y):
+    return x[0] - y[0], x[1] - y[1]
+
+
 def get_val_at_position(input_map, position):
     return input_map[position[0]][position[1]]
 
