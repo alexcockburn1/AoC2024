@@ -148,7 +148,7 @@ def try_swapping_gates(gate_dict, fixed_gate):
 def part2(gate_dict):
     # This solution is really messy, but the basic idea is to run the `validate` function on the gate_dict.
     # This should give a clue to which gates to swap.  Swap the gates using `swap_gates` and repeat 4 times.
-    # Gate ids are redacted here because
+    # Gate ids are redacted here because Eric doesn't like people sharing the questions
     # validate(gate_dict)
     # Swap a <-> b
     gate_dict = swap_gates(gate_dict, "a", "b")
